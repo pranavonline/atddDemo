@@ -1,0 +1,248 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 184379337,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Adopting_puppiesSteps.buildDriver()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Adopting a puppy",
+        "description": "",
+        "id": "adopting-puppies;adopting-a-puppy;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2256835457,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Adopting_puppiesSteps.quit(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14256599836,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the puppy adoption site \"chrome_42_VISTA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome_42_VISTA",
+                  "offset": 33
+                }
+              ],
+              "location": "Adopting_puppiesSteps.i_am_on_the_puppy_adoption_site(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 546121560,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select \"Brook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brook",
+                  "offset": 10
+                }
+              ],
+              "location": "Adopting_puppiesSteps.i_select(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 950838677,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "add the puppy to the shopping cart",
+            "match": {
+              "location": "Adopting_puppiesSteps.add_the_puppy_to_the_shopping_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 754645383,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I proceed to the checkout",
+            "match": {
+              "location": "Adopting_puppiesSteps.i_proceed_to_the_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155734540,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter \"Chrys\" in the name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chrys",
+                  "offset": 7
+                }
+              ],
+              "location": "Adopting_puppiesSteps.enter_in_the_name_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95259150,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter \"123 Main\" in the address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123 Main",
+                  "offset": 7
+                }
+              ],
+              "location": "Adopting_puppiesSteps.enter_in_the_address_field(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146608624,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter \"chrys@example.com\" in the email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrys@example.com",
+                  "offset": 7
+                }
+              ],
+              "location": "Adopting_puppiesSteps.enter_in_the_email_field(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 274128557,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "select \"Credit card\" from the pay type",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Credit card",
+                  "offset": 8
+                }
+              ],
+              "location": "Adopting_puppiesSteps.select_from_the_pay_type(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 763010128,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click the Place Order button",
+            "match": {
+              "location": "Adopting_puppiesSteps.i_click_the_Place_Order_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88517664,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see \"Thank you for adopting a puppy!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank you for adopting a puppy!",
+                  "offset": 14
+                }
+              ],
+              "location": "Adopting_puppiesSteps.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 201411,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I get a puppy",
+            "match": {
+              "location": "Adopting_puppiesSteps.i_get_a_puppy()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@requires_browser"
+          }
+        ]
+      }
+    ],
+    "name": "Adopting puppies",
+    "description": "",
+    "id": "adopting-puppies",
+    "keyword": "Feature",
+    "uri": "adopting_puppies.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@requires_browser"
+      }
+    ]
+  }
+]

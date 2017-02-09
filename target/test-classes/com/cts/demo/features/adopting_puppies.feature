@@ -1,6 +1,48 @@
 @requires_browser
 Feature: Adopting puppies
 
+  #Background: 
+  #	Given I on app
+  #
+  #Scenario: Fill the form
+  #When I fill the form
+  #|username|password|
+  #|pranav|pass|
+  #Then able to login
+  #
+  #Scenario: Fill the form
+  #Given I navigated to home page
+  #When I fill the form
+  #|username|password|
+  #|pranav1|pass|
+  #Then not able to login
+  #
+  #Scenario: Fill the form
+  #Given I navigated to home page
+  #And I navigated to account page
+  #When I fill the form
+  #|username|password|
+  #|pranav1|pass|
+  #Then not able to login
+  
+  
+  #
+  #
+  #
+  #
+  #Scenario Outline: Fill the form
+  #Given I on app
+  #When I fill the form
+  #|username|password|
+  #|<user>|<password>|
+  #Then <flag> able to login
+  #
+  #Examples:
+  #|user|password|flag|
+  #|pranav|password||
+  #|pranav1|password|not|
+  
+  
   Scenario Outline: Adopting a puppy
     Given I am on the puppy adoption site "<BrowserName>"
     When I select "<puppy_name>"

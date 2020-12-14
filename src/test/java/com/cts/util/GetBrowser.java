@@ -44,9 +44,9 @@ public class GetBrowser extends Logging {
 		Map<String, Object> prefs = new HashMap<>();
             prefs.put("profile.default_content_settings.popups", 1);
             opts.setExperimentalOption("prefs", prefs);
-		logger.debug("********************Initialting Browser *****************");
+		System.out.println("********************Initialting Browser *****************");
 		WebDriver driver = new ChromeDriver(opts);
-		logger.debug("********************Initiated Browser *****************");
+		System.out.println("********************Initiated Browser *****************");
 		return driver;
 // 		WebDriver driver = new HtmlUnitDriver();
 // 		return driver;

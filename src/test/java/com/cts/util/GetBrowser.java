@@ -35,10 +35,9 @@ public class GetBrowser extends Logging {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions opts = new ChromeOptions();
 		    opts.addArguments("--no-sandbox");
-		    opts.addArguments("--disable-dev-shm-usage");
-		    if (useHeadless) {
-			opts.addArguments("--headless");
-		    }
+		    opts.addArguments("--disable-dev-shm-usage");		  
+		    opts.addArguments("--headless");
+		    
 		Map<String, Object> prefs = new HashMap<>();
             prefs.put("profile.default_content_settings.popups", 1);
             opts.setExperimentalOption("prefs", prefs);

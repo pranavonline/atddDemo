@@ -109,7 +109,7 @@
 
 			<!-- integration testing dependencies -->
 
-			<!--
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
@@ -122,13 +122,6 @@
 							<goal>test</goal>
 						</goals>
 						<configuration>
-							<suiteXmlFiles>
-								<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-							</suiteXmlFiles>
-							<parallel>classes</parallel>
-							<forkCount>10</forkCount>
-							<reuseForks>false</reuseForks>
-							<threadCount>10</threadCount>
 							<resources>
 								<resource>
 									<directory>src/test/resources</directory>
@@ -144,7 +137,8 @@
 					</execution>
 				</executions>
 			</plugin>
-			-->
+			
+			
 		</plugins>
 	</build>
 </project>

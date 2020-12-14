@@ -58,7 +58,8 @@ Feature: Adopting puppies
 
     Examples: 
       | BrowserName     | name  | address  | email             | pay_type    | puppy_name |
-      | chrome_42_VISTA | Chrys | 123 Main | chrys@example.com | Credit card | Brook      |
+      | Headless | Chrys | 123 Main | chrys@example.com | Credit card | Brook      |
+      #| chrome_42_VISTA | Chrys | 123 Main | chrys@example.com | Credit card | Brook      |
       #| ipad_8.2_OS X 10.10_iPad Simulator_landscape                   | Chrys | 123 Main | chrys@example.com | Credit card | Brook      |
       #| iphone_8.2_OS X 10.10_iPhone Simulator_portrait                | Chrys | 123 Main | chrys@example.com | Credit card | Brook      |
       #| android_4.1_android_Samsung Galaxy Note 10.1 Emulator_portrait | Chrys | 123 Main | chrys@example.com | Credit card | Brook      |

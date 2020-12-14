@@ -17,6 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.slf4j.LoggerFactory;
 import com.cts.util.ConfigData;
 import java.util.*;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;		
 
 public class GetBrowser extends Logging {
 	protected WebDriver driver = null;
@@ -33,16 +34,18 @@ public class GetBrowser extends Logging {
 	}
 	
 	public WebDriver openBrowser(String strName)  {
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions opts = new ChromeOptions();
-		    opts.addArguments("--no-sandbox");
-		    opts.addArguments("--disable-dev-shm-usage");		  
-		    opts.addArguments("--headless");
+// 		WebDriverManager.chromedriver().setup();
+// 		ChromeOptions opts = new ChromeOptions();
+// 		    opts.addArguments("--no-sandbox");
+// 		    opts.addArguments("--disable-dev-shm-usage");		  
+// 		    opts.addArguments("--headless");
 		    
-		Map<String, Object> prefs = new HashMap<>();
-            prefs.put("profile.default_content_settings.popups", 1);
-            opts.setExperimentalOption("prefs", prefs);
-		return new ChromeDriver(opts);
+// 		Map<String, Object> prefs = new HashMap<>();
+//             prefs.put("profile.default_content_settings.popups", 1);
+//             opts.setExperimentalOption("prefs", prefs);
+//		return new ChromeDriver(opts);
+		WebDriver driver = new HtmlUnitDriver();
+		return driver;
 	}
 	
 // 	public WebDriver openBrowser(String strName)  {

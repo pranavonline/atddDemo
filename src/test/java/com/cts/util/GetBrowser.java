@@ -40,7 +40,11 @@ public class GetBrowser extends Logging {
 		    opts.addArguments("--no-sandbox");
 		    opts.addArguments("--disable-dev-shm-usage");		  
 		    opts.addArguments("--headless");
-		    
+   		    opts.addArguments("--disable-extensions"); // disabling extensions
+   		    opts.addArguments("disable-infobars"); // disabling infobars
+		opts.addArguments("--disable-gpu"); // applicable to windows os only
+		
+		
 		Map<String, Object> prefs = new HashMap<>();
             prefs.put("profile.default_content_settings.popups", 1);
             opts.setExperimentalOption("prefs", prefs);

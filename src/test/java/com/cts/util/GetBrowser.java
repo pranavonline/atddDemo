@@ -38,11 +38,12 @@ public class GetBrowser extends Logging {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions opts = new ChromeOptions();
  		    opts.addArguments("--no-sandbox");
-// 		    opts.addArguments("--disable-dev-shm-usage");		  
+ 		    opts.addArguments("--disable-dev-shm-usage");		  
  		    opts.addArguments("--headless");
 //    		    opts.addArguments("--disable-extensions"); // disabling extensions
     		    opts.addArguments("--remote-debugging-port=9222");
  		opts.addArguments("--disable-gpu"); // applicable to windows os only
+		opts.setBinary("$GOOGLE_CHROME_BIN");
 		//--headless, --disable-gpu, --no-sandbox, and --remote-debugging-port=9222
 		
 		

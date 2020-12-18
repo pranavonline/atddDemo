@@ -37,10 +37,10 @@ public class GetBrowser extends Logging {
  		    opts.addArguments("--disable-dev-shm-usage");		  
  		    opts.addArguments("--headless");
 //    		    opts.addArguments("--disable-extensions"); // disabling extensions
-    		    opts.addArguments("--remote-debugging-port=9222");
+    		    //opts.addArguments("--remote-debugging-port=9222");
  		opts.addArguments("--disable-setuid-sandbox"); // applicable to windows os only
 		
-		opts.setBinary("\\$HOME/.apt/opt/google/$BIN");
+		//opts.setBinary("\\$HOME/.apt/opt/google/$BIN");
 		//--headless, --disable-gpu, --no-sandbox, and --remote-debugging-port=9222
 		
 		

@@ -43,7 +43,6 @@ public class GetBrowser extends Logging {
 //    		    opts.addArguments("--disable-extensions"); // disabling extensions
     		    opts.addArguments("--remote-debugging-port=9222");
  		opts.addArguments("--disable-gpu"); // applicable to windows os only
-		opts.setBinary("/app/.apt/usr/bin/google-chrome");
 		//--headless, --disable-gpu, --no-sandbox, and --remote-debugging-port=9222
 		
 		

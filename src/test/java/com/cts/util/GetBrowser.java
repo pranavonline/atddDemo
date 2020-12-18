@@ -22,14 +22,10 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class GetBrowser extends Logging {
 	protected WebDriver driver = null;
 	protected DesiredCapabilities dc = new DesiredCapabilities();
-	protected Properties systemProperties;
 	public ConfigData config = new ConfigData();
 
 	public GetBrowser() {
 		this.logger = LoggerFactory.getLogger(GetBrowser.class);
-		systemProperties = System.getProperties();
-        systemProperties.setProperty("http.proxyHost", "proxy.kdc.capitalone.com");
-        systemProperties.setProperty("http.proxyPort", "8099");
 		
 	}
 	
@@ -44,7 +40,7 @@ public class GetBrowser extends Logging {
     		    opts.addArguments("--remote-debugging-port=9222");
  		opts.addArguments("--disable-gpu"); // applicable to windows os only
 		
-		opts.setBinary(System.getProperty("GOOGLE_CHROME_BIN"));
+		//opts.setBinary(System.getProperty("GOOGLE_CHROME_BIN"));
 		//--headless, --disable-gpu, --no-sandbox, and --remote-debugging-port=9222
 		
 		

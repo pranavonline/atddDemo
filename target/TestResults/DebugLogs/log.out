@@ -1,8 +1,0 @@
-2017-02-07 20:49:11 INFO  GetBrowser:152 - New Chrome WebDriver instantiated
-2017-02-07 20:49:11 INFO  GetBrowser:176 - Browser "chrome" successfully opened with capabilities
-2017-02-07 20:49:14 INFO  Adopting_puppiesSteps:71 - Selecting the puppy
-2017-02-07 20:49:15 INFO  Adopting_puppiesSteps:77 - Adding puppy to cart
-2017-02-07 20:49:15 INFO  Adopting_puppiesSteps:83 - Proceeding to checkout
-2017-02-07 20:49:16 INFO  Adopting_puppiesSteps:89 - Filling the form fields
-2017-02-07 20:49:16 INFO  Adopting_puppiesSteps:110 - Placing order to adopt the puppy
-2017-02-07 20:49:17 INFO  Adopting_puppiesSteps:116 - Verifying the confirmation message on home page

@@ -3,6 +3,7 @@ package com.cts.util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.net.URL;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
@@ -188,7 +189,7 @@ public class ObjectRepository extends Logging {
 	public WebElement CreateObject(WebDriver webDriver, String strLogicName) {
 		logger.debug("Entering CreateObject ");
 		WebElement element = null, tempElement = null;
-		WebDriverWait wdWait = new WebDriverWait(webDriver, 30);
+		WebDriverWait wdWait = new WebDriverWait(webDriver,Duration.ofSeconds(10));
 		tempElement = this.getObject(webDriver, strLogicName);
 		element = wdWait.until(ExpectedConditions
 				.elementToBeClickable(tempElement));

@@ -11,11 +11,14 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.cts.util.ObjectRepository;
+
+import io.cucumber.java.en.When;
+
 import com.cts.util.ConfigData;
 
 public class Home_page {
 
-	static String Url = "http://puppies.herokuapp.com";
+	static String Url = "https://magento.softwaretestingboard.com/";
 	WebDriver driver;
 
 	ConfigData config = null;
@@ -32,9 +35,13 @@ public class Home_page {
 		driver.get(Url);
 		return new Home_page(driver);
 	}
+	
+	
+	
+	
 
 	
-	 @FindBy(css ="*[title*='Home']") WebElement homelink; 
+	 @FindBy(css ="*[title*='Home Page']") WebElement homelink; 
 	 @FindBy(id ="notice") WebElement notice;
 	 @FindBy(className ="puppy_list") List<WebElement> colPuppies;
 	
@@ -47,6 +54,7 @@ public class Home_page {
 			}
 		return result;
 	}
+	
 	
 	public String getNotice(){
 		String strResult;

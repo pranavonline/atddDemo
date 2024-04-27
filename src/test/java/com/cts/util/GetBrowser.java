@@ -17,7 +17,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.slf4j.LoggerFactory;
 import com.cts.util.ConfigData;
 import java.util.*;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;		
 
 public class GetBrowser extends Logging {
 	protected WebDriver driver = null;
@@ -29,13 +28,14 @@ public class GetBrowser extends Logging {
 		
 	}
 	
-	public WebDriver openBrowser(String strName)  {
+	public WebDriver openBrowser()  {
 		
-		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().setup();
 		ChromeOptions opts = new ChromeOptions();
  		    opts.addArguments("--no-sandbox");
  		    opts.addArguments("--disable-dev-shm-usage");		  
- 		    opts.addArguments("--headless");
+// 		    opts.addArguments("--headless");
+ 		    
 //    		    opts.addArguments("--disable-extensions"); // disabling extensions
     		    //opts.addArguments("--remote-debugging-port=9222");
  		opts.addArguments("--disable-setuid-sandbox"); // applicable to windows os only
@@ -56,11 +56,11 @@ public class GetBrowser extends Logging {
 	}
 	
 // 	public WebDriver openBrowser(String strName)  {
-		
+//		
 // 			String[] browserData = strName.split("_");
 // 			WebDriver wDriver = null;
 // 				// Parse the data value - it is delimited by Underscores
-				
+//				
 // 				for(int i = 0; i < browserData.length; i++) {
 // 					if(browserData[i].length() > 0) {
 // 						switch(i) {
@@ -84,13 +84,14 @@ public class GetBrowser extends Logging {
 // 							dc.setCapability("deviceOrientation", browserData[i]);
 // 							logger.debug("device orientation loaded from data:\"" + browserData[i] + "\"");
 // 							break;
-							
+//							
 // 						default: // unknown token
 // 							logger.error("Unknown token in data value. Index: " + i + " Value: " + browserData[i]);
 // 							break;
 // 						}
 // 					}
 // 				}
+// 			}
 			
 		
 			

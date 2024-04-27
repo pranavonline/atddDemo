@@ -2,8 +2,9 @@ package com.cts.eCuke;
 
 import org.junit.runner.RunWith;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
 
 @CucumberOptions(
 		features = {"src/test/resources/com/cts/demo/features/"},
